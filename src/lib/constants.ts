@@ -56,10 +56,10 @@ export const FOOTER_LINKS = {
 
 // Company info
 export const COMPANY_INFO = {
-  name: '한국 세계음식 푸드트럭 중앙회',
-  ceo: '',
-  businessNumber: '',
-  phone: '',
+  name: '세계음식 한국 푸드트럭 중앙회',
+  ceo: '김은화',
+  businessNumber: '680-06-04008',
+  phone: '1688-8695',
   email: 'donfoorock@naver.com',
-  address: '',
+  address: '경기도 안성시 대덕면 소현리 10',
 } as const;
