@@ -37,8 +37,13 @@ public/
 - `sm: 360px`, `md: 768px`, `lg: 1024px`, `xl: 1280px`, `2xl: 1920px`
 - **커스텀**: `menu: 1120px` — 네비게이션 전환 기준 (`@custom-variant menu`)
 
-### 컨테이너
-- `.container-foodtruck` — max-width 1280px, 모바일 24px / 태블릿 48px / 데스크톱 0px 패딩
+### 컨테이너 (2종)
+- `.container-foodtruck` — Header, Footer, 메인 페이지용
+  - max-width 1280px, min-width 672px(md+)
+  - 패딩: 모바일 24px / 태블릿+ 48px / 1376px+ 0px
+- `.container-content` — 서브 페이지용
+  - max-width 1110px, min-width 688px(md+)
+  - 패딩: 모바일 24px / 태블릿+ 40px / 1190px+ 0px
 
 ## 주요 패턴
 

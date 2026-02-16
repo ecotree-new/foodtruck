@@ -15,7 +15,9 @@
 - CSS 변수: 브랜드 색상(`#FF6B26` 오렌지), 배경(`#242527` 다크, `#37383C` raised, `#FBFBFB` 라이트), 텍스트 색상
 - 타이포그래피 스케일: display(96/64px) → title(48/40px) → heading(32/24px) → body(20/16px) → label(14px)
 - 커스텀 breakpoint `menu: 1120px` (`@custom-variant menu`)
-- 컨테이너 유틸리티 `.container-foodtruck` (max-width 1280px, 반응형 패딩 24px/48px/0px)
+- 컨테이너 유틸리티 2종:
+  - `.container-foodtruck` — Header, Footer, 메인 페이지용 (max 1280px, min 672px, 패딩 24px/48px/0px @1376px)
+  - `.container-content` — 서브 페이지용 (max 1110px, min 688px, 패딩 24px/40px/0px @1190px)
 - ecotree 프로젝트의 `globals.css` 패턴을 참조하여 구축
 
 ### 3. 상수 파일 (`src/lib/constants.ts`)

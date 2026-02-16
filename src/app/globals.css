@@ -62,9 +62,15 @@
   --text-body-2: 16px;
   --text-label-1: 14px;
 
-  /* Spacing */
-  --spacing-container-padding: 48px;
-  --spacing-content-max: 1280px;
+  /* Spacing — Main (Header, Footer, 메인 페이지) */
+  --spacing-main-max: 1280px;
+  --spacing-main-min: 672px;
+  --spacing-main-padding: 48px;
+
+  /* Spacing — Content (서브 페이지) */
+  --spacing-content-max: 1110px;
+  --spacing-content-min: 688px;
+  --spacing-content-padding: 40px;
 }
 
 /* Base styles */
@@ -76,10 +82,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Container utility */
+/* Container — Main (Header, Footer, 메인 페이지) */
 .container-foodtruck {
   width: 100%;
-  max-width: 1280px;
+  max-width: var(--spacing-main-max);
+  min-width: auto;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
@@ -88,13 +95,40 @@ body {
 
 @media (min-width: 768px) {
   .container-foodtruck {
-    padding-left: 48px;
-    padding-right: 48px;
+    min-width: var(--spacing-main-min);
+    padding-left: var(--spacing-main-padding);
+    padding-right: var(--spacing-main-padding);
   }
 }
 
 @media (min-width: 1376px) {
   .container-foodtruck {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Container — Content (서브 페이지) */
+.container-content {
+  width: 100%;
+  max-width: var(--spacing-content-max);
+  min-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .container-content {
+    min-width: var(--spacing-content-min);
+    padding-left: var(--spacing-content-padding);
+    padding-right: var(--spacing-content-padding);
+  }
+}
+
+@media (min-width: 1190px) {
+  .container-content {
     padding-left: 0;
     padding-right: 0;
   }
