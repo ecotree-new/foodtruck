@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* Custom breakpoint variant for menu */
+@custom-variant menu (@media (min-width: 1120px));
+
+/* CSS Variables */
+:root {
+  --brand-primary: #FF6B26;
+  --brand-soft: #FFC4A9;
+  --bg-default: #242527;
+  --bg-raised: #37383C;
+  --bg-inverse: #FBFBFB;
+  --text-primary: #FFFFFF;
+  --text-subtle: #898DA1;
+  --text-inverse: #111111;
+  --overlay: rgba(0, 0, 0, 0.5);
+  --footer-link: #BFBFBF;
+  --footer-link-hover: #F5F5F5;
+}
+
+@theme inline {
+  /* Font */
+  --font-pretendard: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  /* Brand Colors */
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-soft: var(--brand-soft);
+
+  /* Background Colors */
+  --color-bg-default: var(--bg-default);
+  --color-bg-raised: var(--bg-raised);
+  --color-bg-inverse: var(--bg-inverse);
+
+  /* Text Colors */
+  --color-text-primary: var(--text-primary);
+  --color-text-subtle: var(--text-subtle);
+  --color-text-inverse: var(--text-inverse);
+
+  /* Overlay */
+  --color-overlay: var(--overlay);
+
+  /* Footer link */
+  --color-footer-link: var(--footer-link);
+  --color-footer-link-hover: var(--footer-link-hover);
+
+  /* Breakpoints */
+  --breakpoint-sm: 360px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1920px;
+  --breakpoint-menu: 1120px;
+
+  /* Typography Scale */
+  --text-display-1: 96px;
+  --text-display-2: 64px;
+  --text-title-1: 48px;
+  --text-title-2: 40px;
+  --text-heading-1: 32px;
+  --text-heading-2: 24px;
+  --text-body-1: 20px;
+  --text-body-2: 16px;
+  --text-label-1: 14px;
+
+  /* Spacing */
+  --spacing-container-padding: 48px;
+  --spacing-content-max: 1280px;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-pretendard);
+  background-color: var(--bg-inverse);
+  color: var(--text-inverse);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container utility */
+.container-foodtruck {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .container-foodtruck {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media (min-width: 1376px) {
+  .container-foodtruck {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
