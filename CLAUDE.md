@@ -4,7 +4,7 @@
 - **Framework**: Next.js 16 (App Router, TypeScript)
 - **Styling**: Tailwind CSS v4 (`@theme inline` 문법, `@custom-variant`)
 - **Font**: Pretendard (CDN)
-- **Animation**: Framer Motion (모바일 사이드 메뉴)
+- **Animation**: Framer Motion (모바일 사이드 메뉴, 카드 섹션 whileInView)
 - **Package Manager**: npm
 
 ## 프로젝트 구조
@@ -14,8 +14,13 @@ src/
 ├── app/
 │   ├── globals.css          # 디자인 시스템 (CSS 변수, Tailwind 테마, 컨테이너)
 │   ├── layout.tsx           # 루트 레이아웃 (Pretendard, Header, Footer)
-│   └── page.tsx             # 메인 페이지 (히어로 섹션)
+│   └── page.tsx             # 메인 페이지 (4개 섹션 조합)
 ├── components/
+│   ├── home/
+│   │   ├── HeroSection.tsx           # 비디오 배경 히어로
+│   │   ├── BusinessAreaSection.tsx   # 주요 사업 분야 카드 (Framer Motion)
+│   │   ├── ExpectedEffectSection.tsx # 기대효과 카드 (Framer Motion)
+│   │   └── CTASection.tsx            # CTA 배너
 │   └── layout/
 │       ├── Header.tsx       # 반응형 헤더 (메가 메뉴 + 모바일 사이드메뉴)
 │       └── Footer.tsx       # 반응형 푸터 (3단계 반응형)
@@ -40,6 +45,7 @@ public/
 ### 반응형 Breakpoints
 - `sm: 360px`, `md: 768px`, `lg: 1024px`, `xl: 1280px`, `2xl: 1920px`
 - **커스텀**: `menu: 1120px` — 네비게이션 전환 기준 (`@custom-variant menu`)
+- **커스텀**: `cards: 875px` — 카드 그리드 2열 전환 기준 (`@custom-variant cards`)
 
 ### 컨테이너 (2종)
 - `.container-foodtruck` — Header, Footer, 메인 페이지용
@@ -86,6 +92,9 @@ public/
 - **환경변수**: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET_NAME`, `R2_PUBLIC_URL`, `NEXT_PUBLIC_R2_PUBLIC_URL`
 - **사용법**: `src/lib/r2-images.ts`의 `HOMEPAGE_IMAGES` 상수로 URL 참조
 - **섹션**: main(7), about/greeting(2), about/esg(9), about/organization(7), about/directions(4), industry/operation(9), industry/world_food(3) — 총 41개 파일
+
+## 규칙
+- 구현 계획 세울 때 각 텍스트 요소에 타이포그래피 스펙(Display 2, Body 2 등)을 반드시 명시할 것
 
 ## 참고
 - ecotree 프로젝트(`/Users/jay/Desktop/ecotree/`)의 디자인 패턴을 참조하여 구축

@@ -2,7 +2,7 @@ const R2_BASE = process.env.NEXT_PUBLIC_R2_PUBLIC_URL;
 
 export const HOMEPAGE_IMAGES = {
   main: {
-    hero_video: `${R2_BASE}/homepage/main/hero-video.mov`,
+    hero_video: `${R2_BASE}/homepage/main/hero-video.mp4`,
     business_area_01: `${R2_BASE}/homepage/main/business-area-01.webp`,
     business_area_02: `${R2_BASE}/homepage/main/business-area-02.webp`,
     expected_effect_01: `${R2_BASE}/homepage/main/expected-effect-01.webp`,
