@@ -78,9 +78,27 @@
 - `/Users/jay/Downloads/foodtruck/screenshot/header/` — 헤더 디자인 (데스크톱 메가 메뉴, 모바일 사이드 메뉴)
 - `/Users/jay/Downloads/foodtruck/screenshot/footer/` — 푸터 디자인 (768px, 모바일)
 
+### 9. Cloudflare R2 이미지/동영상 스토리지
+- **버킷**: `foodtruck-assets` (foodtruck-admin 프로젝트와 동일 버킷 공유)
+- **퍼블릭 URL**: `https://pub-8ba77ae4d6be44b2b12c9762cc3ef01a.r2.dev`
+- **`next.config.ts`**: R2 도메인을 `images.remotePatterns`에 등록하여 `<Image>` 컴포넌트 사용 가능
+- **`src/lib/r2.ts`**: `@aws-sdk/client-s3` 기반 R2 클라이언트 (서버 사이드 업로드용, `uploadToR2`, `getR2PublicUrl`)
+- **`src/lib/r2-images.ts`**: 업로드된 41개 이미지/동영상 URL을 `HOMEPAGE_IMAGES` 상수로 관리
+  - `main`: hero-video(mov), business-area(2), expected-effect(3), cta
+  - `about.greeting`: title, content
+  - `about.esg`: title, environmental(1), social(5), governance(2)
+  - `about.organization`: title, branch-role(3), branch-principle(3)
+  - `about.directions`: title, icon(3)
+  - `industry.operation`: problem, problem-icon(3), operation(4), expected-effect
+  - `industry.world_food`: menu-description, differentiator(2)
+- **`scripts/upload-homepage-images.ts`**: 디자이너 제공 42개 파일(197MB)을 webp 변환 후 R2 업로드하는 일괄 스크립트
+  - `sharp` (quality 85)로 jpeg/jpg/png → webp 변환, mov/svg는 원본 유지
+  - macOS NFD 유니코드 정규화 처리 (`folder.normalize("NFC")`)
+- **패키지 추가**: `@aws-sdk/client-s3`, `sharp` (dependencies), `tsx` (devDependencies)
+
 ## 남은 작업 (미구현)
 - 각 서브 페이지 구현 (중앙회 안내, 푸드트럭 산업, 다회용기, 알림·자료, 문의하기)
-- 히어로 섹션 실제 디자인 (이미지/영상 등)
+- 히어로 섹션 실제 디자인 (이미지/영상 등) — R2 이미지 URL 준비 완료
 - OG 이미지, 파비콘 등 메타 에셋
 - 스크린샷 기반 나머지 섹션 디자인 구현
 

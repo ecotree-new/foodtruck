@@ -20,7 +20,11 @@ src/
 │       ├── Header.tsx       # 반응형 헤더 (메가 메뉴 + 모바일 사이드메뉴)
 │       └── Footer.tsx       # 반응형 푸터 (3단계 반응형)
 └── lib/
-    └── constants.ts         # NAV_ITEMS, COMPANY_INFO, FOOTER_LINKS
+    ├── constants.ts         # NAV_ITEMS, COMPANY_INFO, FOOTER_LINKS
+    ├── r2.ts                # Cloudflare R2 클라이언트 (서버 사이드)
+    └── r2-images.ts         # R2 업로드된 이미지 URL 매핑 상수
+scripts/
+└── upload-homepage-images.ts  # 이미지 일괄 업로드 스크립트
 public/
 └── logo.svg                 # 로고
 ```
@@ -74,6 +78,14 @@ public/
 - 대표 전화: 1688-8695
 - 이메일: donfoorock@naver.com
 - 주소: 경기도 안성시 대덕면 소현리 10
+
+## Cloudflare R2 (이미지/동영상 스토리지)
+- **버킷**: `foodtruck-assets` (foodtruck-admin 프로젝트와 공유)
+- **퍼블릭 URL**: `https://pub-8ba77ae4d6be44b2b12c9762cc3ef01a.r2.dev`
+- **이미지 키 패턴**: `homepage/{섹션}/{파일명}.webp`
+- **환경변수**: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET_NAME`, `R2_PUBLIC_URL`, `NEXT_PUBLIC_R2_PUBLIC_URL`
+- **사용법**: `src/lib/r2-images.ts`의 `HOMEPAGE_IMAGES` 상수로 URL 참조
+- **섹션**: main(7), about/greeting(2), about/esg(9), about/organization(7), about/directions(4), industry/operation(9), industry/world_food(3) — 총 41개 파일
 
 ## 참고
 - ecotree 프로젝트(`/Users/jay/Desktop/ecotree/`)의 디자인 패턴을 참조하여 구축
