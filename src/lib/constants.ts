@@ -2,7 +2,7 @@
 export const NAV_ITEMS = [
   {
     label: '중앙회 안내',
-    href: '/about',
+    href: '/about/greeting',
     children: [
       { label: '인사말', href: '/about/greeting' },
       { label: 'ESG', href: '/about/esg' },
@@ -11,7 +11,7 @@ export const NAV_ITEMS = [
   },
   {
     label: '푸드트럭 산업',
-    href: '/industry',
+    href: '/industry/operation',
     children: [
       { label: '운영', href: '/industry/operation' },
       { label: '세계 음식', href: '/industry/world-food' },
@@ -25,7 +25,7 @@ export const NAV_ITEMS = [
   },
   {
     label: '알림·자료',
-    href: '/notice',
+    href: '/notice/list',
     children: [
       { label: '공지사항', href: '/notice/list' },
       { label: '행사 갤러리', href: '/notice/gallery' },
@@ -33,7 +33,7 @@ export const NAV_ITEMS = [
   },
   {
     label: '문의하기',
-    href: '/contact',
+    href: '/contact/event',
     children: [
       { label: '행사 문의', href: '/contact/event' },
       { label: '중앙회 가입 문의', href: '/contact/join' },

@@ -76,9 +76,9 @@
   --spacing-main-padding: 48px;
 
   /* Spacing — Content (서브 페이지) */
-  --spacing-content-max: 1110px;
+  --spacing-content-max: 1280px;
   --spacing-content-min: 688px;
-  --spacing-content-padding: 40px;
+  --spacing-content-padding: 48px;
 }
 
 /* Base styles */
@@ -135,7 +135,7 @@ body {
   }
 }
 
-@media (min-width: 1190px) {
+@media (min-width: 1376px) {
   .container-content {
     padding-left: 0;
     padding-right: 0;

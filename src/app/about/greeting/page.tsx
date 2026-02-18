@@ -14,7 +14,7 @@ export default function GreetingPage() {
           priority
         />
         <div className="absolute inset-0 bg-black/50" />
-        <h1 className="relative z-10 text-[18px] md:text-title-1 font-bold text-text-primary">
+        <h1 className="relative z-10 text-[24px] md:text-title-1 font-bold text-text-primary">
           인사말
         </h1>
       </section>

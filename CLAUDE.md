@@ -52,8 +52,8 @@ public/
   - max-width 1280px, min-width 672px(md+)
   - 패딩: 모바일 24px / 태블릿+ 48px / 1376px+ 0px
 - `.container-content` — 서브 페이지용
-  - max-width 1110px, min-width 688px(md+)
-  - 패딩: 모바일 24px / 태블릿+ 40px / 1190px+ 0px
+  - max-width 1280px, min-width 688px(md+)
+  - 패딩: 모바일 24px / 태블릿+ 48px / 1376px+ 0px
 
 ## 주요 패턴
 
