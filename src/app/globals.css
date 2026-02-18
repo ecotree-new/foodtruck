@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'GriunPolHumanrights';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/Griun_PolHumanrights-Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
 /* Custom breakpoint variant for menu */
 @custom-variant menu (@media (min-width: 1120px));
 
