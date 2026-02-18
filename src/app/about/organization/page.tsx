@@ -241,11 +241,11 @@ export default function OrganizationPage() {
       </section>
 
       {/* 섹션 4: 지부 역할 */}
-      <section className="bg-bg-default py-16 md:py-24">
+      <section className="bg-bg-default py-[60px] md:py-[160px]">
         <div className="container-content">
-          <div className="flex flex-col xl:flex-row xl:gap-16">
+          <div className="flex flex-col xl:flex-row xl:items-start xl:gap-16">
             {/* 타이틀 */}
-            <h2 className="text-[18px] md:text-title-2 font-bold text-text-primary mb-8 xl:mb-0 xl:shrink-0 xl:pt-2">
+            <h2 className="text-[18px] md:text-title-2 font-bold text-text-primary leading-none mb-8 xl:mb-0 xl:shrink-0">
               지부 역할
             </h2>
 
@@ -260,9 +260,9 @@ export default function OrganizationPage() {
                   viewport={{ once: true, margin: '-50px' }}
                   transition={{ delay: index * 0.15 }}
                 >
-                  <div className="flex flex-col md:flex-row gap-6 md:gap-8 py-8">
-                    {/* 이미지 */}
-                    <div className="relative w-[200px] md:w-[240px] h-[140px] md:h-[170px] shrink-0 mx-auto md:mx-0 rounded-lg overflow-hidden">
+                  <div className={`flex flex-col md:flex-row md:items-start gap-6 md:gap-[5vw] xl:gap-[100px] pb-8 ${index > 0 ? 'pt-8' : ''}`}>
+                    {/* 이미지: 모바일 full-width, md+ 320x180 고정 */}
+                    <div className="relative w-full md:w-[320px] h-[200px] md:h-[180px] shrink-0 rounded-lg overflow-hidden">
                       <Image
                         src={card.image}
                         alt={card.title}
@@ -273,9 +273,9 @@ export default function OrganizationPage() {
 
                     {/* 텍스트 */}
                     <div className="flex-1">
-                      <div className="flex items-baseline gap-3 md:gap-4 mb-3 md:mb-4">
+                      <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-4">
                         <p
-                          className="text-[24px] md:text-title-1 text-brand-primary font-normal"
+                          className="text-[24px] md:text-title-1 text-brand-primary font-normal leading-none"
                           style={{ fontFamily: 'Aboreto, cursive' }}
                         >
                           {card.number}
@@ -310,7 +310,7 @@ export default function OrganizationPage() {
       </section>
 
       {/* 섹션 5: 지부 운영 원칙 */}
-      <section className="bg-bg-default pb-16 md:pb-24">
+      <section className="bg-bg-default py-[60px] md:py-[160px]">
         <div className="container-content">
           <h2 className="text-[18px] md:text-title-2 font-bold text-text-primary mb-8 md:mb-12">
             지부 운영 원칙
