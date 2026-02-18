@@ -23,7 +23,7 @@ function ContactInfo({ iconSize = 'w-4 h-4' }: { iconSize?: string }) {
       </Link>
       <p className="pt-2">주소 : {COMPANY_INFO.address}</p>
       <Link
-        href="/about#location"
+        href="/about/directions"
         className="flex items-center gap-0.5 font-bold text-[#CACACA] hover:text-[#F5F5F5] transition-colors group"
       >
         <span>오시는길</span>
