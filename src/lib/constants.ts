@@ -7,6 +7,7 @@ export const NAV_ITEMS = [
       { label: '인사말', href: '/about/greeting' },
       { label: 'ESG', href: '/about/esg' },
       { label: '조직 및 지부안내', href: '/about/organization' },
+      { label: '오시는 길', href: '/about/directions' },
     ],
   },
   {
@@ -46,7 +47,7 @@ export const NAV_ITEMS = [
 export const FOOTER_LINKS = {
   services: [
     { label: '문의하기', href: '/contact' },
-    { label: '오시는길', href: '/about#location' },
+    { label: '오시는길', href: '/about/directions' },
   ],
   legal: [
     { label: '이용약관', href: '/terms' },

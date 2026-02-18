@@ -262,7 +262,7 @@ export default function OrganizationPage() {
                 >
                   <div className={`flex flex-col md:flex-row md:items-start gap-6 md:gap-[5vw] xl:gap-[100px] pb-8 ${index > 0 ? 'pt-8' : ''}`}>
                     {/* 이미지: 모바일 full-width, md+ 320x180 고정 */}
-                    <div className="relative w-full md:w-[320px] h-[200px] md:h-[180px] shrink-0 rounded-lg overflow-hidden">
+                    <div className="relative w-full md:w-[320px] h-[200px] md:h-[180px] shrink-0 overflow-hidden">
                       <Image
                         src={card.image}
                         alt={card.title}

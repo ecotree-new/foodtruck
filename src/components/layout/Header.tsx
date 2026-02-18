@@ -152,7 +152,7 @@ export default function Header() {
 
         {/* Mega menu full-width background layer */}
         {hoveredMenu && (
-          <div className="hidden menu:block absolute top-16 left-0 right-0 bg-bg-default border-t border-white/10 h-[160px] z-0" />
+          <div className="hidden menu:block absolute top-16 left-0 right-0 bg-bg-default border-t border-white/10 h-[200px] z-0" />
         )}
       </div>
 
