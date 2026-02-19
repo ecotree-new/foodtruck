@@ -38,7 +38,7 @@ export const NAV_ITEMS = [
     children: [
       { label: '행사 문의', href: '/contact/event' },
       { label: '중앙회 가입 문의', href: '/contact/join' },
-      { label: '오픈채팅', href: '/contact/chat' },
+      { label: '오픈채팅', href: 'https://open.kakao.com/o/sEn0Abhi' },
     ],
   },
 ] as const;

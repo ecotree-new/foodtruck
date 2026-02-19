@@ -91,21 +91,33 @@ export default function Header() {
                     {hoveredMenu && (
                       <div className="absolute top-full left-0 flex flex-col gap-5 pt-6 pb-8">
                         {item.children.length > 0 ? (
-                          item.children.map((child) => (
-                            <Link
-                              key={child.href}
-                              href={child.href}
-                              className={`
-                                text-label-1 whitespace-nowrap transition-colors
-                                ${isActive(child.href)
-                                  ? 'text-brand-primary font-semibold'
-                                  : 'text-text-primary hover:text-brand-primary'
-                                }
-                              `}
-                            >
-                              {child.label}
-                            </Link>
-                          ))
+                          item.children.map((child) =>
+                            child.href.startsWith('http') ? (
+                              <a
+                                key={child.href}
+                                href={child.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-label-1 whitespace-nowrap transition-colors text-text-primary hover:text-brand-primary"
+                              >
+                                {child.label}
+                              </a>
+                            ) : (
+                              <Link
+                                key={child.href}
+                                href={child.href}
+                                className={`
+                                  text-label-1 whitespace-nowrap transition-colors
+                                  ${isActive(child.href)
+                                    ? 'text-brand-primary font-semibold'
+                                    : 'text-text-primary hover:text-brand-primary'
+                                  }
+                                `}
+                              >
+                                {child.label}
+                              </Link>
+                            )
+                          )
                         ) : (
                           <Link
                             href={item.href}
@@ -248,19 +260,31 @@ export default function Header() {
                                 >
                                   {item.children.map((child) => (
                                     <li key={child.href}>
-                                      <Link
-                                        href={child.href}
-                                        onClick={() => setIsMobileMenuOpen(false)}
-                                        className={`
-                                          block py-3 pl-4 text-[16px]
-                                          ${isActive(child.href)
-                                            ? 'text-brand-primary font-semibold'
-                                            : 'text-text-subtle hover:text-brand-primary'
-                                          }
-                                        `}
-                                      >
-                                        {child.label}
-                                      </Link>
+                                      {child.href.startsWith('http') ? (
+                                        <a
+                                          href={child.href}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                          onClick={() => setIsMobileMenuOpen(false)}
+                                          className="block py-3 pl-4 text-[16px] text-text-subtle hover:text-brand-primary"
+                                        >
+                                          {child.label}
+                                        </a>
+                                      ) : (
+                                        <Link
+                                          href={child.href}
+                                          onClick={() => setIsMobileMenuOpen(false)}
+                                          className={`
+                                            block py-3 pl-4 text-[16px]
+                                            ${isActive(child.href)
+                                              ? 'text-brand-primary font-semibold'
+                                              : 'text-text-subtle hover:text-brand-primary'
+                                            }
+                                          `}
+                                        >
+                                          {child.label}
+                                        </Link>
+                                      )}
                                     </li>
                                   ))}
                                 </motion.ul>
