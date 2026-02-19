@@ -8,7 +8,7 @@ function ContactInfo({ iconSize = 'w-4 h-4' }: { iconSize?: string }) {
       <p>대표 전화 : {COMPANY_INFO.phone}</p>
       <p>대표 메일 : {COMPANY_INFO.email}</p>
       <Link
-        href="/contact"
+        href="/contact/event"
         className="flex items-center gap-0.5 font-bold text-[#CACACA] hover:text-[#F5F5F5] transition-colors group"
       >
         <span>문의하기</span>

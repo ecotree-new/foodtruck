@@ -36,6 +36,14 @@ export default function Header() {
     return pathname.startsWith(href);
   };
 
+  const isMenuActive = (item: (typeof NAV_ITEMS)[number]) => {
+    if (isActive(item.href)) return true;
+    if (item.children) {
+      return item.children.some((child) => isActive(child.href));
+    }
+    return false;
+  };
+
   const toggleSubmenu = (href: string) => {
     setOpenSubmenu(openSubmenu === href ? null : href);
   };
@@ -73,7 +81,7 @@ export default function Header() {
                       href={item.href}
                       className={`
                         text-body-2 leading-6 cursor-pointer transition-colors
-                        ${isActive(item.href)
+                        ${isMenuActive(item)
                           ? 'font-bold text-brand-primary'
                           : 'font-medium text-text-primary hover:text-brand-primary'
                         }
@@ -224,7 +232,7 @@ export default function Header() {
                               onClick={() => toggleSubmenu(item.href)}
                               className={`
                                 flex items-center justify-between w-full py-4 text-[18px] cursor-pointer
-                                ${isActive(item.href)
+                                ${isMenuActive(item)
                                   ? 'font-bold text-brand-primary'
                                   : 'font-semibold text-text-primary'
                                 }
@@ -298,7 +306,7 @@ export default function Header() {
                             onClick={() => setIsMobileMenuOpen(false)}
                             className={`
                               block py-4 text-[18px]
-                              ${isActive(item.href)
+                              ${isMenuActive(item)
                                 ? 'font-bold text-brand-primary'
                                 : 'font-semibold text-text-primary'
                               }
