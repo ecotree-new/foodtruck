@@ -126,7 +126,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-3 md:mt-6 text-center text-[12px] md:text-[14px] text-[#898DA1]">
-          Copyright &copy; [{new Date().getFullYear()}] ecotree All Rights Reserved.
+          Copyright &copy; [{new Date().getFullYear()}] 세계음식 한국 푸드트럭 중앙회 All Rights Reserved.
         </div>
       </div>
     </footer>

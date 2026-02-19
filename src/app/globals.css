@@ -7,8 +7,19 @@
   font-display: swap;
 }
 
+/* SlowGothic Font (숫자용) */
+@font-face {
+  font-family: 'SlowGothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
 /* Custom breakpoint variant for menu */
 @custom-variant menu (@media (min-width: 1120px));
+
+/* Height-based responsive variant (for small height viewports like 13.3" laptops) */
+@custom-variant short-h (@media (max-height: 800px));
 
 /* CSS Variables */
 :root {

@@ -60,4 +60,7 @@ export const HOMEPAGE_IMAGES = {
       differentiator_02: `${R2_BASE}/homepage/industry/world-food/differentiator-02.webp`,
     },
   },
+  reusable: {
+    stats_bg: `${R2_BASE}/homepage/reusable/stats-bg.webp`,
+  },
 } as const;

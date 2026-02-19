@@ -64,3 +64,142 @@ export const COMPANY_INFO = {
   email: 'donfoorock@naver.com',
   address: '경기도 안성시 대덕면 소현리 10',
 } as const;
+
+// ──────────────────────────────────────────
+// 다회용기 페이지 (/reusable)
+// ──────────────────────────────────────────
+
+const REUSABLE_R2 = 'https://pub-8ba77ae4d6be44b2b12c9762cc3ef01a.r2.dev/homepage/reusable';
+
+export const REUSABLE_HERO = {
+  title: '다회용기 운영의 기준을 만들다.',
+  subtitle: '에코트리는 다회용기 운영의 전 과정을 직접 설계하고 관리합니다.',
+  video: `${REUSABLE_R2}/hero-video.mp4`,
+} as const;
+
+export const REUSABLE_RENTAL_FLOW = {
+  label: '대여 플로우',
+  title: '필요한 만큼 빌리고, 사용 후까지 책임집니다',
+  steps: [
+    {
+      id: 1,
+      number: '01',
+      title: '대여',
+      description: '행사 일정과 규모에 맞춰 필요한 수량의 다회용기를 대여합니다. 옵션과 수량 확정 후 대여를 진행합니다.',
+      image: `${REUSABLE_R2}/rental-flow/step-01.webp`,
+    },
+    {
+      id: 2,
+      number: '02',
+      title: '세척',
+      description: '에코트리만의 전용 세척 공정으로 위생적으로 세척을 진행합니다.',
+      image: `${REUSABLE_R2}/rental-flow/step-02.webp`,
+    },
+    {
+      id: 3,
+      number: '03',
+      title: '살균 및 소독',
+      description: '세척이 끝난 용기는 살균·소독 공정을 한 번 더 거칩니다. 건조 및 정리 후 포장을 합니다.',
+      image: `${REUSABLE_R2}/rental-flow/step-03.webp`,
+    },
+    {
+      id: 4,
+      number: '04',
+      title: '수거 및 배송',
+      description: '사용한 다회용기는 수거 후 다시 에코트리로 반납됩니다.',
+      image: `${REUSABLE_R2}/rental-flow/step-04.webp`,
+    },
+  ],
+} as const;
+
+export const REUSABLE_BUSINESS_RANGE = {
+  label: '사업 범위',
+  title: '다양한 공간과 행사에서 함께합니다.',
+  cards: [
+    { id: 1, title: '지자체 행사', image: `${REUSABLE_R2}/business-range/local-event.webp` },
+    { id: 2, title: '기업 행사', image: `${REUSABLE_R2}/business-range/corporate-event.webp` },
+    { id: 3, title: '스포츠 경기', image: `${REUSABLE_R2}/business-range/sports.webp` },
+    { id: 4, title: '페스티벌', image: `${REUSABLE_R2}/business-range/festival.webp` },
+    { id: 5, title: '장례식장', image: `${REUSABLE_R2}/business-range/funeral.webp` },
+  ],
+} as const;
+
+export const REUSABLE_WASHING_PROCESS = {
+  title: '세척 순서',
+  subtitle: '위생 기준에 따라 단계별로 관리됩니다.',
+  steps: [
+    { id: 1, title: '불림', description: '세척물을 예열로 불려\n다음 세척 효율을 높임' },
+    { id: 2, title: '수류 초음파\n버블 세척', description: '물 흐름으로 큰 이물질을\n털어내 1차 오염 제거' },
+    { id: 3, title: '고온·고압세척', description: '초음파·버블로 미세 오염을\n분해해 틈새까지 세척' },
+    { id: 4, title: 'UV살균', description: 'UV로 살균 처리해 위생 강화' },
+    { id: 5, title: '고온 열풍 소독', description: '고온 열풍으로 소독 후 빠르게\n건조해 물기 남김 없이 마무리' },
+    { id: 6, title: '전수검사', description: '모든 제품 상태를 전수 확인해\n불량·오염 재유입 차단' },
+    { id: 7, title: '포장', description: '재오염을 방지하도록\n밀봉 포장해 출고/보관' },
+  ],
+} as const;
+
+export const REUSABLE_WASHING_FACILITY = {
+  title: '세척 시설 안내',
+  subtitle: '전용 세척 시설에서 위생적으로 관리됩니다.',
+  cards: [
+    {
+      id: 1,
+      number: '01',
+      title: '애벌 세척대',
+      description: '음식물 잔여물·기름때 등 굵은 오염 1차 제거',
+      image: `${REUSABLE_R2}/washing-facility/facility-01.webp`,
+    },
+    {
+      id: 2,
+      number: '02',
+      title: '초음파 세척대',
+      description: '미세 오염을 진동으로 분해해 틈새까지 깨끗하게 세척',
+      image: `${REUSABLE_R2}/washing-facility/facility-02.webp`,
+    },
+    {
+      id: 3,
+      number: '03',
+      title: '외류형 세척대',
+      description: '세척 중 발생한 이물 및 거품을 외부로 배출하며 순환 세척',
+      image: `${REUSABLE_R2}/washing-facility/facility-03.webp`,
+    },
+    {
+      id: 4,
+      number: '04',
+      title: '고압살균세척대',
+      description: '고압 살균으로 마무리 단계 청결도 향상',
+      image: `${REUSABLE_R2}/washing-facility/facility-04.webp`,
+    },
+  ],
+} as const;
+
+export const REUSABLE_POST_WASHING = {
+  title: '세척 후 마무리까지 완벽하게',
+  subtitle: '안심하고 다시 사용할 수 있도록 관리됩니다.',
+  cards: [
+    {
+      id: 1,
+      title: '살균 건조실',
+      description: '세척 후 살균 건조로 수분을 제거',
+      image: `${REUSABLE_R2}/post-washing/drying-room.webp`,
+    },
+    {
+      id: 2,
+      title: '진공 포장기',
+      description: '진공 포장으로 상태 유지',
+      image: `${REUSABLE_R2}/post-washing/vacuum-packer.webp`,
+    },
+  ],
+} as const;
+
+export const REUSABLE_STATS = {
+  title: '데이터로 확인되는 친환경 성과',
+  subtitle: '에코트리의 행사 운영은 환경 개선으로 이어진 실제 성과를 만들어냅니다.',
+  backgroundImage: 'https://pub-8ba77ae4d6be44b2b12c9762cc3ef01a.r2.dev/homepage/reusable/stats-bg.webp',
+  stats: [
+    { id: 1, label: '탄소 절감 수', value: 1250, unit: '톤' },
+    { id: 2, label: '플라스틱 감소', value: 85, unit: '%' },
+    { id: 3, label: '일회용품 대체', value: 500000, unit: '개' },
+    { id: 4, label: '운영 행사 수', value: 200, unit: '+' },
+  ],
+} as const;
