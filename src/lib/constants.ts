@@ -192,6 +192,42 @@ export const REUSABLE_POST_WASHING = {
   ],
 } as const;
 
+// ──────────────────────────────────────────
+// 문의하기 페이지 (/contact)
+// ──────────────────────────────────────────
+
+// 행사 문의 - 행사 종류
+export const EVENT_TYPES_EVENT = [
+  { value: '', label: '행사 종류를 선택하세요.' },
+  { value: 'university', label: '대학교 축제' },
+  { value: 'regional', label: '지역 축제' },
+  { value: 'corporate', label: '기업 행사' },
+  { value: 'other', label: '기타' },
+] as const;
+
+// 중앙회 가입 문의 - 가입 유형
+export const EVENT_TYPES_JOIN = [
+  { value: '', label: '가입 유형을 선택하세요.' },
+  { value: 'individual', label: '개인' },
+  { value: 'group', label: '단체' },
+  { value: 'branch', label: '지부' },
+  { value: 'other', label: '기타' },
+] as const;
+
+// 이메일 도메인
+export const EMAIL_DOMAINS = [
+  { value: '', label: '직접 선택' },
+  { value: 'gmail.com', label: 'gmail.com' },
+  { value: 'naver.com', label: 'naver.com' },
+  { value: 'daum.net', label: 'daum.net' },
+  { value: 'kakao.com', label: 'kakao.com' },
+  { value: 'hanmail.net', label: 'hanmail.net' },
+] as const;
+
+// ──────────────────────────────────────────
+// 다회용기 페이지 — 통계
+// ──────────────────────────────────────────
+
 export const REUSABLE_STATS = {
   title: '데이터로 확인되는 친환경 성과',
   subtitle: '에코트리의 행사 운영은 환경 개선으로 이어진 실제 성과를 만들어냅니다.',
