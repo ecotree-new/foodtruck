@@ -152,3 +152,14 @@ body {
     padding-right: 0;
   }
 }
+
+/* Markdown Body (공지사항/행사 갤러리 본문) */
+.markdown-body p { margin-bottom: 1rem; }
+.markdown-body h2 { font-size: var(--text-heading-2); font-weight: 700; margin-bottom: 0.75rem; margin-top: 1.5rem; }
+.markdown-body h3 { font-size: var(--text-body-1); font-weight: 700; margin-bottom: 0.5rem; margin-top: 1.25rem; }
+.markdown-body ul, .markdown-body ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+.markdown-body ul { list-style: disc; }
+.markdown-body ol { list-style: decimal; }
+.markdown-body li { margin-bottom: 0.25rem; }
+.markdown-body a { color: var(--brand-primary); text-decoration: underline; }
+.markdown-body img { max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem 0; }
