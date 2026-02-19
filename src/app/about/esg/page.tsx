@@ -25,7 +25,7 @@ const ESG_DATA = {
       ],
     },
     {
-      image: HOMEPAGE_IMAGES.about.esg.environmental_01,
+      image: HOMEPAGE_IMAGES.about.esg.environmental_02,
       title: '에코트리',
       bullets: [
         '다회용기 사업',

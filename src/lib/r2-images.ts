@@ -5,6 +5,7 @@ export const HOMEPAGE_IMAGES = {
     hero_video: `${R2_BASE}/homepage/main/hero-video.mp4`,
     business_area_01: `${R2_BASE}/homepage/main/business-area-01.webp`,
     business_area_02: `${R2_BASE}/homepage/main/business-area-02.webp`,
+    business_area_03: `${R2_BASE}/homepage/main/business-area-03.webp`,
     expected_effect_01: `${R2_BASE}/homepage/main/expected-effect-01.webp`,
     expected_effect_02: `${R2_BASE}/homepage/main/expected-effect-02.webp`,
     expected_effect_03: `${R2_BASE}/homepage/main/expected-effect-03.webp`,
@@ -18,6 +19,7 @@ export const HOMEPAGE_IMAGES = {
     esg: {
       title: `${R2_BASE}/homepage/about/esg/title.webp`,
       environmental_01: `${R2_BASE}/homepage/about/esg/environmental-01.webp`,
+      environmental_02: `${R2_BASE}/homepage/about/esg/environmental-02.webp`,
       social_01: `${R2_BASE}/homepage/about/esg/social-01.webp`,
       social_02: `${R2_BASE}/homepage/about/esg/social-02.webp`,
       social_03: `${R2_BASE}/homepage/about/esg/social-03.webp`,

@@ -16,7 +16,7 @@ const BUSINESS_CARDS = [
     description: '지속가능한 행사 운영을 위한 환경 대응 사업',
   },
   {
-    image: HOMEPAGE_IMAGES.about.esg.environmental_01,
+    image: HOMEPAGE_IMAGES.main.business_area_03,
     title: 'ESG 경영',
     description: '사회적 책임을 기반으로 한 사업 운영 체계',
   },
