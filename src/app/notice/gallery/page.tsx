@@ -25,7 +25,6 @@ export default async function GalleryListPage({ searchParams }: PageProps) {
             전체 {pagination.total}건
           </p>
           <form method="GET" className="relative">
-            {search && <input type="hidden" name="search" value="" />}
             <input
               type="text"
               name="search"
