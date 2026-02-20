@@ -124,7 +124,7 @@ export default function DirectionsPage() {
               Location
             </p>
             <h2 className="text-[14px] md:text-[24px] font-semibold text-text-inverse leading-relaxed">
-              어쩌구 어쩌구하기 위해 노력하는
+              신뢰로 이어가는 푸드트럭의 내일,
               <br />
               중앙회로 오시는 길입니다.
             </h2>
