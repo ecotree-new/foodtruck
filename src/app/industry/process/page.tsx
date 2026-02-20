@@ -7,33 +7,33 @@ const PROCESS_DATA = [
   {
     number: '01',
     title: '행사 정보 접수',
-    description: '장소, 전기, 소방 협의합니다. 장소, 전기, 소방 협의합니다.',
+    description: '행사 목적과 규모에 맞는 운영 계획 수립을 위해 사전 정보를 체계적으로 접수합니다.',
     cta: true,
   },
   {
     number: '02',
     title: '장소, 전기, 소방 협의',
-    description: '장소, 전기, 소방 협의합니다. 장소, 전기, 소방 협의합니다.',
+    description: '현장 안전 확보를 위해 관계 기관 및 담당자와 사전 협의를 진행합니다.',
   },
   {
     number: '03',
     title: '부스 라인업, 배치도 확정',
-    description: '장소, 전기, 소방 협의합니다. 장소, 전기, 소방 협의합니다.',
+    description: '행사 콘셉트와 동선 효율을 고려하여 최적의 부스 구성을 확정합니다.',
   },
   {
     number: '04',
     title: '민원 저감 대책 사전 공지',
-    description: '장소, 전기, 소방 협의합니다. 장소, 전기, 소방 협의합니다.',
+    description: '소음·위생·교통 등 민원 요소를 사전에 분석하고 대응 방안을 안내합니다.',
   },
   {
     number: '05',
     title: '운영',
-    description: '장소, 전기, 소방 협의합니다. 장소, 전기, 소방 협의합니다.',
+    description: '행사 당일 현장 관리 및 운영 총괄을 통해 안정적인 진행을 지원합니다.',
   },
   {
     number: '06',
     title: '매출, 만족도 조사 등 리포트 제출',
-    description: '장소, 전기, 소방 협의합니다. 장소, 전기, 소방 협의합니다.',
+    description: '행사 종료 후 매출 및 만족도 데이터를 분석하여 결과 보고서를 제공합니다.',
   },
 ];
 
@@ -118,19 +118,11 @@ export default function ProcessPage() {
                       <h3 className="text-[14px] min-[760px]:text-heading-2 font-semibold text-[#000000] mb-2 min-[760px]:mb-3">
                         {step.title}
                       </h3>
-                      {/* 데스크톱/태블릿: 본문 + CTA 같은 행 */}
-                      <div className="hidden min-[760px]:flex items-center justify-between gap-4">
-                        <p className="text-body-2 font-medium text-[#000000]">
+                      <div>
+                        <p className="text-[10px] min-[760px]:text-body-2 font-medium text-[#000000]">
                           {step.description}
                         </p>
-                        {step.cta && <CTAButton />}
-                      </div>
-                      {/* 모바일: 본문 아래에 CTA */}
-                      <div className="min-[760px]:hidden">
-                        <p className="text-[10px] font-medium text-[#000000]">
-                          {step.description}
-                        </p>
-                        {step.cta && <CTAButton className="mt-3" />}
+                        {step.cta && <CTAButton className="mt-2 min-[760px]:mt-3" />}
                       </div>
                     </div>
                   </div>

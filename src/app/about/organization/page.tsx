@@ -376,7 +376,7 @@ export default function OrganizationPage() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 container-content text-center">
           <h2 className="text-[18px] md:text-title-2 font-bold text-text-primary mb-[18px] md:mb-[48px]">
-            푸드트럭 중앙회와 함께 시작해보세요.
+            성공적인 푸드트럭 운영의 출발점, 중앙회입니다.
           </h2>
           <a
             href="/contact/event"

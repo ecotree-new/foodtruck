@@ -13,7 +13,7 @@ export default function CTASection() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 container-foodtruck text-center">
         <h2 className="text-[18px] md:text-title-2 font-bold text-text-primary mb-[18px] md:mb-[48px]">
-          푸드트럭 중앙회와 함께 시작해보세요.
+          행사의 품격을 높이는 선택, 중앙회와 함께하세요
         </h2>
         <a
           href="/contact"

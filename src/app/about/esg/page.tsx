@@ -19,9 +19,9 @@ const ESG_DATA = {
       image: HOMEPAGE_IMAGES.about.esg.environmental_01,
       title: '위생교육',
       bullets: [
-        '공공 행사 대응을 위한 위생 기준 인식 제고',
-        '안전 운영 문화 확산',
-        '표준 운영 기준 마련',
+        '체계적인 위생교육을 통한 식품 안전 기준 준수',
+        '정기적 위생점검 및 교육 프로그램 운영',
+        '탄소 저감을 통한 친환경 운영 제시',
       ],
     },
     {
@@ -56,7 +56,7 @@ const ESG_DATA = {
     {
       image: HOMEPAGE_IMAGES.about.esg.social_03,
       title: '지역상생',
-      bullets: ['지자체 식재료 사용'],
+      bullets: ['지역 특산물·로컬 브랜드 연계 확대', '지역 문화 존중 행사 운영', '지역 자원 가치 확산'],
     },
     {
       image: HOMEPAGE_IMAGES.about.esg.social_04,
@@ -65,7 +65,6 @@ const ESG_DATA = {
         '푸드트럭 창업 관련 정보 제공',
         '운영·관리 기준 안내',
         '안전한 창업 환경 조성',
-        '메뉴 큐레이션',
       ],
     },
     {

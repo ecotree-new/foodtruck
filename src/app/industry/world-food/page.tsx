@@ -144,9 +144,9 @@ function MenuSection() {
       {/* 콘텐츠 */}
       <div className="relative z-10 container-content text-center">
         <h2 className="text-[18px] md:text-[40px] font-bold text-text-primary leading-snug mb-10 md:mb-16">
-          푸드트럭으로 경험하는
+          다양한 문화가 어우러진 세계 음식을
           <br />
-          전세계 음식 어쩌구
+          한자리에서 만나보세요
         </h2>
 
         {/* Desktop (>1280px): 4열 × 2행 */}

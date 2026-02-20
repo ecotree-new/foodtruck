@@ -12,7 +12,7 @@ const EFFECT_CARDS = [
   },
   {
     icon: HOMEPAGE_IMAGES.main.expected_effect_02,
-    title: '위생과 친절로 시민과 관광객의 만족도 높힘',
+    title: '시민과 관광객의 만족도 높힘',
     description: '체계적 운영으로 매출, 참가자 만족도, 환경 보호를 동시에 실현하는 운영 체계를 구축합니다.',
   },
   {
