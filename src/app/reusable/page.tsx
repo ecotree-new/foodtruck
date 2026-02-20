@@ -22,7 +22,7 @@ export default function ReusablePage() {
       {/* CTA 배너 */}
       <section className="relative py-28 md:py-36 lg:py-44">
         <Image
-          src={HOMEPAGE_IMAGES.main.cta}
+          src={HOMEPAGE_IMAGES.reusable.cta_bg}
           alt="CTA 배경"
           fill
           className="object-cover"

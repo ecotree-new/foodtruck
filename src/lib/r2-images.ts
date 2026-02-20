@@ -64,5 +64,6 @@ export const HOMEPAGE_IMAGES = {
   },
   reusable: {
     stats_bg: `${R2_BASE}/homepage/reusable/stats-bg.webp`,
+    cta_bg: `${R2_BASE}/homepage/reusable/cta-bg.webp`,
   },
 } as const;
