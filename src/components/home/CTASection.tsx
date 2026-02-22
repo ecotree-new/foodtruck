@@ -16,7 +16,7 @@ export default function CTASection() {
           행사의 품격을 높이는 선택, 중앙회와 함께하세요
         </h2>
         <a
-          href="/contact"
+          href="/contact/event"
           className="inline-block bg-brand-primary text-text-primary font-semibold px-[24px] py-[6px] md:px-[64px] md:py-4 rounded text-[12px] md:text-[20px] hover:opacity-90 transition-opacity"
         >
           문의하기

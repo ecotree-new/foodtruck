@@ -162,4 +162,5 @@ body {
 .markdown-body ol { list-style: decimal; }
 .markdown-body li { margin-bottom: 0.25rem; }
 .markdown-body a { color: var(--brand-primary); text-decoration: underline; }
+.markdown-body blockquote { border-left: 4px solid var(--brand-primary); padding-left: 1rem; margin: 1rem 0; color: var(--text-subtle); }
 .markdown-body img { max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem 0; }
