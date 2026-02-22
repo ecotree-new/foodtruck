@@ -24,7 +24,7 @@ export default function HeroSection() {
         </p>
         <div className="mt-10">
           <a
-            href="/contact"
+            href="/contact/event"
             className="inline-block bg-brand-primary text-text-primary font-semibold px-[24px] py-[6px] md:px-[48px] md:py-[8px] rounded text-[12px] md:text-[20px] hover:opacity-90 transition-opacity"
           >
             문의하기

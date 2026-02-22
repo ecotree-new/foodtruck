@@ -120,7 +120,7 @@ export default function DirectionsPage() {
             transition={{ duration: 0.6 }}
             className="mb-8 md:mb-12"
           >
-            <p className="text-[10px] md:text-[16px] font-medium text-brand-primary mb-4 md:mb-6">
+            <p className="text-[10px] md:text-[24px] font-medium text-brand-primary mb-4 md:mb-6">
               Location
             </p>
             <h2 className="text-[14px] md:text-[24px] font-semibold text-text-inverse leading-relaxed">

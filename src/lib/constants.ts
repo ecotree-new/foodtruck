@@ -214,6 +214,28 @@ export const EVENT_TYPES_JOIN = [
   { value: 'other', label: '기타' },
 ] as const;
 
+// 지역 옵션
+export const REGIONS = [
+  { value: '', label: '지역을 선택하세요.' },
+  { value: 'seoul', label: '서울' },
+  { value: 'gyeonggi', label: '경기' },
+  { value: 'incheon', label: '인천' },
+  { value: 'busan', label: '부산' },
+  { value: 'daegu', label: '대구' },
+  { value: 'gwangju', label: '광주' },
+  { value: 'daejeon', label: '대전' },
+  { value: 'ulsan', label: '울산' },
+  { value: 'sejong', label: '세종' },
+  { value: 'gangwon', label: '강원' },
+  { value: 'chungbuk', label: '충북' },
+  { value: 'chungnam', label: '충남' },
+  { value: 'jeonbuk', label: '전북' },
+  { value: 'jeonnam', label: '전남' },
+  { value: 'gyeongbuk', label: '경북' },
+  { value: 'gyeongnam', label: '경남' },
+  { value: 'jeju', label: '제주' },
+] as const;
+
 // 이메일 도메인
 export const EMAIL_DOMAINS = [
   { value: '', label: '직접 선택' },
