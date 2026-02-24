@@ -57,12 +57,12 @@ export const FOOTER_LINKS = {
 
 // Company info
 export const COMPANY_INFO = {
-  name: '세계음식 한국 푸드트럭 중앙회',
-  ceo: '김은화',
-  businessNumber: '680-06-04008',
+  name: '한국세계음식푸드트럭중앙회',
+  ceo: '최동현',
+  businessNumber: '743-06-03300',
   phone: '1688-8695',
   email: 'donfoorock@naver.com',
-  address: '경기도 안성시 대덕면 소현리 10',
+  address: '경기도 안성시 대덕면 소마니길 183, 나동',
 } as const;
 
 // ──────────────────────────────────────────
