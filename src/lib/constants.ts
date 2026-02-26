@@ -57,7 +57,7 @@ export const FOOTER_LINKS = {
 
 // Company info
 export const COMPANY_INFO = {
-  name: '한국세계음식푸드트럭중앙회',
+  name: '한국 세계음식 푸드트럭 중앙회',
   ceo: '최동현',
   businessNumber: '743-06-03300',
   phone: '1688-8695',

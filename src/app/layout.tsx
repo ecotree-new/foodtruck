@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 export const metadata: Metadata = {
   title: "한국 세계음식 푸드트럭 중앙회",
   description: "한국 세계음식 푸드트럭 중앙회 공식 웹사이트",
+  icons: { icon: '/favicon.svg' },
 };
 
 export default function RootLayout({

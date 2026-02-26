@@ -54,12 +54,21 @@ export default function GreetingPage() {
                 </p>
               </div>
 
-              <p
-                className="mt-12 md:mt-16 text-[14px] md:text-body-1 text-text-inverse"
-                style={{ fontFamily: 'GriunPolHumanrights' }}
-              >
-                한국 세계음식 푸드트럭 중앙회 일동
-              </p>
+              <div className="mt-12 md:mt-16 flex items-center gap-4">
+                <Image
+                  src="/symbol.svg"
+                  alt=""
+                  width={32}
+                  height={32}
+                  className="brightness-0"
+                />
+                <p
+                  className="text-[14px] md:text-body-1 text-text-inverse"
+                  style={{ fontFamily: 'GriunPolHumanrights' }}
+                >
+                  한국 세계음식 푸드트럭 중앙회 일동
+                </p>
+              </div>
             </div>
           </div>
         </div>

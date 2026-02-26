@@ -153,7 +153,14 @@ export default function DirectionsPage() {
             </div>
 
             {/* 우측 — 연락처 */}
-            <div className="lg:w-[320px] flex-shrink-0 flex flex-col justify-start lg:pt-8">
+            <div className="lg:w-[320px] flex-shrink-0 flex flex-col justify-center">
+              <Image
+                src="/logo.svg"
+                alt="한국 세계음식 푸드트럭 중앙회"
+                width={200}
+                height={38}
+                className="brightness-0 mb-10"
+              />
               <div className="space-y-8">
                 {CONTACT_ITEMS.map((item) => (
                   <div key={item.label} className="pb-8 border-b border-[#DDE7FF]">

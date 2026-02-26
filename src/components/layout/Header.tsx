@@ -59,12 +59,19 @@ export default function Header() {
           <div className="container-foodtruck h-full">
             <div className="flex items-center justify-between h-full">
               {/* Logo */}
-              <Link href="/" className="flex-shrink-0">
+              <Link href="/" className="flex-shrink-0 flex items-center gap-3">
+                <Image
+                  src="/symbol.svg"
+                  alt=""
+                  width={40}
+                  height={40}
+                  priority
+                />
                 <Image
                   src="/logo.svg"
                   alt="한국 세계음식 푸드트럭 중앙회"
-                  width={160}
-                  height={40}
+                  width={200}
+                  height={38}
                   priority
                 />
               </Link>
